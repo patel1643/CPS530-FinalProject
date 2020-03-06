@@ -1,0 +1,113 @@
+body{
+
+  background-color: black;
+}
+
+
+
+.head{
+  padding: 60px;
+  font-size: 8rem;
+  text-align: center;
+
+}
+
+#second-part{
+  background-color: black;
+  padding: 100px;
+}
+
+h3{
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+}
+
+
+.sec-1{
+  color: orange;
+}
+.p-head{
+  font-size:31px;
+    color: lightgreen;
+    text-align:center;
+}
+
+
+
+.paragraph{
+  color:#639a67;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align:center;
+}
+
+.information{
+
+  padding: 50px;
+}
+
+.icon{
+  height: 36px;
+  width: 36px;
+}
+
+#tips{
+background-color: #d1e9ea;
+padding: 100px;
+text-align: center;
+}
+
+.sec-2{
+  padding-bottom: 20px;
+
+}
+.paragraph-2{
+
+  color: #4b788f;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align:center;
+
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.p-head-2{
+    font-size:31px;
+    text-align: center;
+}
+
+
+
+.btn{
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#JS-jQuery{
+  padding: 100px;
+  text-align: center;
+}
+
+h4{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  color: orange;
+}
+
+.image-compare{
+  text-align: center;
+
+}
+
+.img-c{
+  height: 550px;
+  width: 450px;
+}
