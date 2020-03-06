@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>Page 2</title>
+        <style>
+            body{
+                background-image: url("background1.jpeg");
+            }
+            img{
+                opacity: 1.0;
+                margin-top: 5px;
+                width: 70%;
+            }
+            h1{
+                margin-top:0%;
+                background-color: black;
+                color: white;
+                text-align:center;
+            }
+            div{
+                background-color:white;
+                border-radius: 10px;
+                color:black;
+                opacity: 95%;
+                margin-left: 20%;
+                margin-right:20%;
+                padding: 1% 1% 1% 1%;
+            }
+            ol{
+                opacity: 100%;
+            }
+            .collapsible {
+              background-color: black;
+              color: white;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+            }
+            .active, .collapsible:hover {
+              background-color: #DAC6A4;
+            }
+
+            .content {
+              text-align:center;
+              padding: 0 18px;
+              margin-top:5px;
+              margin-bottom:5px;
+              display: none;
+              overflow: hidden;
+              background-color: #f1f1f1;
+              opacity: 100%;
+            }
+            a{
+                color: black;
+                margin: 1% 0% 1% 0%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button type="button" class="collapsible">CPS 530 Project</button>
+        <div class="content">
+            <a type="button" class="btn btn-dark" href="index.html">Page 1</a>
+            <a type="button" class="btn btn-dark" href="Page2.html">Page 2</a>
+            <a type="button" class="btn btn-dark" href="Page3.html">Page 3</a>
+            <a type="button" class="btn btn-dark" target="_blank" href="https://rocky-eyrie-08984.herokuapp.com/">Page 4</a>
+            <a type="button" class="btn btn-dark" href="Page5.html">Page 5</a>
+            <a type="button" class="btn btn-dark" href="Page6.html">Page 6</a>
+        </div>
+        <h1>Tutorial: How To Use W3.CSS In Your Project</h1>
+        <div>
+            <ol>
+                <li>
+                    To use W3.CSS in your project it is very simple.<br>
+                    Simply, add this line of code inside the head tag of the html document you want to use W3.CSS in.<br>
+                    <code><kbd>&lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/&gt;</kbd></code>
+                </li>
+            </ol>
+        </div>
+        <hr>
+        <h1>Tutorial: Using Node.js on Heroku</h1>
+        <div>
+            <ol>
+                <li>First, make a free Heroku account at <a href="https://signup.heroku.com/">https://signup.heroku.com/</a>.</li>
+                <li>
+                    Then, install the Heroku CLI onto your computer by following the instructions at
+                    <a href="https://devcenter.heroku.com/articles/heroku-cli">https://devcenter.heroku.com/articles/heroku-cli</a>.<br>
+                    Make sure to install Git(Ensure to follow first time steps if you haven't installed Git before)
+                    before installing the Heroku CLI if you don't already have it. The link for the Git installation
+                    is available on the Heroku CLI installation website.<br>
+                    <img src="git.PNG">
+                </li>
+                <li>
+                    After installing Heroku and Git, you must install Node.js which you can do at
+                    <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a>.<br>
+                    When you download Node.js, you automatically download npm as well so you do not need to worry about downloading that as well.
+                </li>
+                <li>
+                    Now that you have the prerequisites for deploying the Node.js framework on to your Heroku server.<br>
+                    Start by opening Git and navigating to the directory you want to create your app.
+                    (You can navigate through directories using the <code><kbd>cd DIRECTORY_NAME</kbd></code> command.<br>
+                </li>
+                <li>
+                    Next, use the command <code><kbd>mkdir DIRECTORY_NAME</kbd></code> to make a new directory to hold files for your app.
+                </li>
+                <li>
+                    Again, use the <code><kbd>cd DIRECTORY_NAME</kbd></code> to navigate inside the directory you just created.<br>
+                    Then use the command <code><kbd>npm init -y</kbd></code>. This will create a package.json for you.<br>
+                    <img src="npm_init_-y.png">
+                </li>
+                <li>
+                    Next, use your preferred text editor to open the file. For the purpose of the tutorial, the vim editor will be used.<br>
+                    Enter the command <code><kbd>vim package.json</kbd></code>.
+                </li>
+                <li>
+                    Using the arrows keys you can traverse the text in the vim editor.<br>
+                    You can insert text by typing <code><kbd>i</kbd></code>.<br>
+                    If you wish to stop typing text, use the <code><kbd>Esc</kbd></code> key on your keyboard.<br>
+                    This will allow you to input commands such as <code><kbd>:w</kbd></code> to write the file(save the file) and
+                    <code><kbd>:q</kbd></code> to exit the file.
+                </li>
+                <li>
+                    Add a comma to the line of code that says <code><kbd>"test": "echo \"Error: no test specified\" && exit 1</kbd></code>.<br>
+                    Then on the next line, insert the line <code><kbd>"start": "node index.js"</kbd></code>.<br>
+                    <img src="package_json.PNG">
+                </li>
+                <li>
+                    Next, write and exit the file. Once you have done this create a new file called index.js
+                    by using the command <code><kbd>vim index.js</kbd></code>.
+                    In this file, enter the code for your Node.js file. Then write and exit the file.
+                </li>
+                <li>
+                    Enter the commands <code><kbd>git init</kbd></code>, <code><kbd>git add . && git commit -m "init"</kbd></code>,
+                    <code><kbd>heroku create</kbd></code>, <code><kbd>git push heroku master</kbd></code>.
+                </li>
+            </ol>
+        </div>
+    </body>
+
+</html>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
