@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>Page 1</title>
+        <style>
+            body{
+                background-image: url("background.jpeg");
+            }
+            h1{
+                margin-top:0%;
+                background-color: black;
+                color: white;
+                text-align:center;
+            }
+            div{
+                background-color:white;
+                border-radius: 10px;
+                color:black;
+                opacity: 95%;
+                margin-left: 20%;
+                margin-right:20%;
+                margin-bottom:1%;
+                padding: 1px 1% 1% 1%;
+            }
+            .collapsible {
+              background-color: black;
+              color: white;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+            }
+             .active, .collapsible:hover {
+              background-color: #DAC6A4;
+            }
+            .content {
+              text-align:center;
+              padding: 0 18px;
+              margin-top:5px;
+              display: none;
+              overflow: hidden;
+              background-color: #f1f1f1;
+              opacity: 100%;
+            }
+            a{
+                color: black;
+                margin: 1% 0% 1% 0%;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" class="collapsible">CPS 530 Project</button>
+        <div class="content">
+            <a type="button" class="btn btn-dark" href="index.html">Page 1</a>
+            <a type="button" class="btn btn-dark" href="Page2.html">Page 2</a>
+            <a type="button" class="btn btn-dark" href="Page3.html">Page 3</a>
+            <a type="button" class="btn btn-dark" target="_blank" href="https://rocky-eyrie-08984.herokuapp.com/">Page 4</a>
+            <a type="button" class="btn btn-dark" href="Page5.html">Page 5</a>
+            <a type="button" class="btn btn-dark" href="Page6.html">Page 6</a>
+        </div>
+        <h1>Frontend Framework: W3.CSS</h1>
+        <div class>
+            <h3>Popularity</h3>
+            <ul>
+                <li>W3.CSS is popular among students learning web development, but is generally not used as there are more sophisticated options such as React.</li>
+            </ul>
+            <h3>Advantages</h3>
+            <ul>
+                <li>W3.CSS is very easy to use.</li>
+                <li>It does not use Javascript, just CSS therefore making it very simple.</li>
+                <li>W3.CSS can be used for all browsers and devices.</li>
+                <li>It has built-in responsiveness.</li>
+                <li>W3.CSS is free to use and no license is required to use it in a professional environment.</li>
+            </ul>
+            <h3>Disadvantages</h3>
+            <ul>
+                <li>It isn't as powerful as other frameworks as it only uses CSS.</li>
+                <li>Additionally, it isn't as popular and well-known as other frameworks.</li>
+            </ul>
+            <h3>Who uses W3.CSS and for what type of websites?</h3>
+             <ul>
+                 <li>Students usually use it for educational purposes and for simple uses only like testing or basic animations.</li>
+             </ul>
+        </div>
+        <h1>Backend Framework: Node.js</h1>
+        <div>
+            <h3>Popularity</h3>
+            <ul>
+                <li>
+                    According to a survey with 51,620 responses conducted by Stack Overflow, Node.js
+                    is currently the most popular framework. One of the reasons for Node.js's popularity is that
+                    it runs off of JavaScript. Since JavaScript is common to most web developers, it is easy to
+                    transition from another web technology to Node.js.
+                </li>
+            </ul>
+            <h3>Advantages</h3>
+                <ul>
+                    <li>Node.js has very high performance</li>
+                    <ul>
+                        <li>
+                            Interprets JavaScript using Google's V8 JS engine. Google's V8 JS engine compiles
+                            JS code directly into machine code. This allows the engine to execute the code at very
+                            fast speeds.
+                        </li>
+                    </ul>
+                    <li>Node.js can be hosted almost anywhere</li>
+                    <ul>
+                        <li>
+                            Since Node.js is such a popular backend framework it is supported by many web servers and cloud based
+                            hosting providers without needing to install it.
+                        </li>
+                    </ul>
+                    <li>Node.js can handle requests simultaneously</li>
+                    <ul>
+                        <li>
+                            Node.js performs I/O operations asynchronously, meaning that it saves a lot of memory
+                            and is easier to execute when compared to traditional looping.
+                        </li>
+                    </ul>
+                </ul>
+            <h3>Disadvantages</h3>
+                <ul>
+                    <li>Application Programming Interface for Node.js isn't stable</li>
+                    <ul>
+                        <li>
+                            The Node.js API frequently changes. Sometimes a new API appears and
+                            it will not have backwards compatibility so developers will have to
+                            make changes to their code to ensure their code is compatible with
+                            the latest version of the Node.js API.
+                        </li>
+                    </ul>
+                    <li>Node.js is not efficient in handling CPU-intensive apps</li>
+                    <ul>
+                        <li>
+                            Node.js does not support multi-threaded programming so it is not very good for
+                            performing very long calculations or anything cpu intensive.
+                        </li>
+                    </ul>
+                </ul>
+            <h3>Who uses Node.js and for what type of websites?</h3>
+                <ul>
+                    <li>Node.js is mainly used by backend developers for data-intensive real-time applications that run across various devices.</li>
+                </ul>
+        </div>
+    </body>
+</html>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
