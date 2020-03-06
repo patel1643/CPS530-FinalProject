@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <title>Conclusion</title>
+      <style>
+          body{
+	        background-image: url("background2.jpeg");
+	        color: white;
+           }
+          h1{
+              background-color: black;
+              color: white;
+              text-align:center;
+           }
+           h2,h3{
+            text-align: center;
+           }
+          div{
+              margin-left: 18%;
+              margin-right:18%;
+              padding-left: 1%;
+              padding-right: 1%;
+              border-radius: 10px;
+              background-color:white;
+              color:black;
+              opacity:90%;
+          }
+          p{
+            opacity: 100%;
+          }
+          .collapsible {
+              background-color: black;
+              color: white;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+            }
+             .active, .collapsible:hover {
+              background-color: #DAC6A4;
+            }
+            .content {
+              text-align:center;
+              padding: 0 18px;
+              margin-top:5px;
+              margin-bottom:5px;
+              display: none;
+              overflow: hidden;
+              background-color: #f1f1f1;
+              opacity: 100%;
+            }
+            a{
+                color: black;
+                margin: 1% 0% 1% 0%;
+            }
+      </style>
+    </head>
+    <body>
+        <button type="button" class="collapsible">CPS 530 Project</button>
+        <div class="content">
+            <a type="button" class="btn btn-dark" href="index.html">Page 1</a>
+            <a type="button" class="btn btn-dark" href="Page2.html">Page 2</a>
+            <a type="button" class="btn btn-dark" href="Page3.html">Page 3</a>
+            <a type="button" class="btn btn-dark" target="_blank" href="https://rocky-eyrie-08984.herokuapp.com/">Page 4</a>
+            <a type="button" class="btn btn-dark" href="Page5.html">Page 5</a>
+            <a type="button" class="btn btn-dark" href="Page6.html">Page 6</a>
+        </div>
+        <h1>Conclusion</h1>
+        <div>
+            <h2>W3.CSS - Frontend Framework<br> & <br> Node.js - Backend Framework</h2>
+            <br>
+            <h3>Rate your experience with the frameworks that you chose</h3>
+            <p>
+                The framework we chose for Front end Development was really helpful.
+                It saved us a lot of time and typing which helped us keep our code clean and more readable.<br>
+
+                We used Node.JS as our backend framework. It was very useful and reliable.
+                In tandem with Node.js, we also used Express.js which made Node.js easier to use as a backend framework for our application.
+            </p>
+            <h3>Did they perform to your expectations?</h3>
+            <p>
+                We would say W3.CSS performed above our expectations as there are a lot of complex things
+                like adding animations, effects, etc which would be hard to code in raw HTML/CSS especially for
+                someone like us with very little experience in Web Development. However, it was possible to add
+                to our website through the use of W3.CSS.<br>
+
+                Yes, Node.js did perform to our expectations. Creating the routes and calling an API for our project
+                was really easy using this backend framework. Also, parsing out the JSON format data from an API
+                was straightforward using the built-in methods.
+            </p>
+            <h3>Were they difficult to install or configure?</h3>
+            <p>
+                No, it was very easy to install W3.CSS. There are two ways you can use them on your
+                website. First, you can add a CDN (Content Delivery Network) link to your website's HTML (in the head tag)
+                and you can access all the classes and features of that framework. The second way would be to download
+                the source code and files from the website and linking it on your website through an internal link.<br>
+
+                Node.JS is really easy to install and configure on your computer locally. You can also use Amazon's
+                AWS Cloud9 or any other cloud based integrated development environment that lets you write your Node.js code.
+                The framework Express.JS was easy to install using the npm package manager.
+            </p>
+            <h3>Was it easy to create the page(s) with it?</h3>
+            <p>
+                Yes, it was very easy to make pages with W3.CSS since the W3schools website has all
+                the information on how the framework can be used to make better looking websites. Overall, it was
+                easy to create pages using the frameworks.<br>
+
+                Yes, it was easy to connect the API and parse the data to the front end using Node.js and Express.JS.
+            </p>
+            <h3>Was the learning curve steep compared with regular HTML/CSS/Javascript/PHP?</h3>
+            <p>
+                It was easier to learn how to use and implement framework compared to learning HTML/CSS/JavaScript
+                since the frameworks are nothing but pre-defined snippets of code so if you have a good understanding
+                of how those three languages work then it shouldn't take long for you to understand the concept of
+                frameworks.<br>
+
+                Learning Node.js was really easy. It was almost the same as other server side backend frameworks like
+                Django and Flask. Also, using the Express.js framework was really helpful since it is a layer built
+                on top of the Node.JS. It provides robust set of features to develop web applications.
+            </p>
+            <h3>Would you have done things differently in retrospect?</h3>
+            <p>
+                Node.js is a very popular server-side language in the tech industry. It is a platform built
+                on a javascript runtime environment that excels in easily building fast and scalable applications.
+                It is currently used among various tech giants such as Netflix, Uber, and Twitter. W3.CSS, although
+                somewhat limited, is very easy to use and understand. It allowed us to create many effects that were
+                adequate for our purposes. Our familiarity with Node.js and W3.CSS allowed us to use the two frameworks well enough to create
+                a great looking web page. Thus, in retrospect we would not have done things differently for this project.
+            </p>
+            <h3>Did you regret your choice of frameworks?</h3>
+            <p>
+                No, we don't regret our choice of frameworks because we were familiar with
+                the backend and frontend frameworks we chose so it was easy for us to use it.
+            </p>
+        </div>
+    </body>
+</html>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
